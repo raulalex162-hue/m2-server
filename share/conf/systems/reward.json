@@ -1,0 +1,15 @@
+{
+	// RewardService: singurul loc prin care sistemele dau recompense. Ce nu incape in inventar
+	// asteapta in cutia de recompense a jucatorului si se livreaza la intrarea in joc sau cu /reward.
+	"enabled": true,
+
+	// trace | debug | info | warn | error | off. "info" scrie fiecare recompensa data.
+	"log_level": "info",
+
+	// Cate recompense pot astepta in cutia unui jucator (1..200). Cand cutia e plina, recompensele
+	// noi sunt refuzate (si scrise ca eroare in log), nu pierdute.
+	"mailbox_limit": 50,
+
+	// La fiecare intrare in joc, livreaza automat din cutie ce incape.
+	"deliver_on_login": true
+}

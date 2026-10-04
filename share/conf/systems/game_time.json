@@ -1,0 +1,10 @@
+{
+	// Ceasul jocului: ziua de joc comuna tuturor sistemelor zilnice (daily reward, battle pass, ...).
+	"enabled": true,
+	"log_level": "info",
+
+	// Ora (HH:MM, ora locala a serverului) la care incepe o zi noua de joc.
+	// Schimbarea ei se aplica imediat pentru "ce zi e azi", dar sarcinile zilnice deja programate
+	// raman pe ora veche pana la restart.
+	"day_reset": "00:00"
+}
