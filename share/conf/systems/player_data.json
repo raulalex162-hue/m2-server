@@ -1,0 +1,12 @@
+{
+	// Datele per jucator ale sistemelor (PlayerSystemData). Celelalte sisteme depind de el:
+	// cu "enabled": false, niciun sistem nu poate citi sau salva date per jucator.
+	"enabled": true,
+
+	// trace | debug | info | warn | error | off. "debug" arata fiecare cerere si salvare.
+	"log_level": "info",
+
+	// La cate secunde se trimit la db datele modificate (10..3600). Oricum se trimit la iesirea
+	// jucatorului si la oprirea serverului.
+	"flush_interval_s": 60
+}
