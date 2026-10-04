@@ -1,0 +1,27 @@
+{
+	// Recompensa zilnica: o revendicare pe zi de joc (resetul din game_time.json).
+	"enabled": true,
+	"log_level": "info",
+
+	// Nivelul minim (caracterele noi create doar pentru recompensa nu primesc nimic).
+	"min_level": 10,
+
+	// O zi ratata reia ciclul de la ziua 1 (false = seria continua de unde a ramas).
+	"reset_on_miss": true,
+
+	// La intrarea in joc, daca poate revendica: mesaj in chat si fereastra deschisa automat.
+	"notify_on_login": true,
+	"open_window_on_login": true,
+
+	// Ciclul: o recompensa pe zi (1..31 zile). Fiecare: "items" (vnum, count 1..200) si/sau "gold".
+	// Vnum-urile sunt verificate in item_proto la pornire: o greseala opreste sistemul cu mesaj clar.
+	"days": [
+		{ "items": [ { "vnum": 27001, "count": 20 } ] },
+		{ "items": [ { "vnum": 27004, "count": 20 } ] },
+		{ "gold": 50000 },
+		{ "items": [ { "vnum": 27002, "count": 30 } ] },
+		{ "items": [ { "vnum": 27005, "count": 30 } ] },
+		{ "items": [ { "vnum": 27002, "count": 50 }, { "vnum": 27005, "count": 50 } ], "gold": 100000 },
+		{ "items": [ { "vnum": 27003, "count": 50 }, { "vnum": 27006, "count": 50 } ], "gold": 250000 }
+	]
+}
