@@ -1,0 +1,14 @@
+{
+	// Sistemul-martor al Fazei 0: verifica lantul CORE (config, log, evenimente, retea).
+	// Nu face nimic in joc. Poate fi oprit oricand cu "enabled": false si /sysreload heartbeat.
+	"enabled": true,
+
+	// trace | debug | info | warn | error | off. "debug" arata si fiecare MobKill.
+	"log_level": "debug",
+
+	// Scrie in log fiecare EnterGame / LeaveGame.
+	"log_enter_leave": true,
+
+	// Cat de des poate trimite un jucator Ping (milisecunde, 0..60000).
+	"min_ping_interval_ms": 1000
+}
